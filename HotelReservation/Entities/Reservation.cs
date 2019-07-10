@@ -25,6 +25,12 @@ namespace HotelReservation.Entities
             return (int)duration.TotalDays;
         }
 
+        public void UpdateDates(DateTime checkin, DateTime checkout)
+        {
+            Checkin = checkin;
+            Checkout = checkout;
+        }
+
         public override string ToString()
         {
             return "Room: "
